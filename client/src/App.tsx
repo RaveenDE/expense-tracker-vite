@@ -1,5 +1,7 @@
 import './App.css'
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { Auth } from './pages/auth';
+import { Dashboard } from './pages/dashboard';
 
 function App() {
   
@@ -8,8 +10,8 @@ function App() {
     <Router>
       <div className='app-container'>
         <Routes>
-        <Route path="/" element={<h1>Dashboard</h1>}/>
-        <Route path="auth" element={<h1>Sign-in</h1>}/>
+           <Route path="/" element={<Dashboard/>}/>
+           <Route path="/auth" element={<Auth/>}/>
         
         </Routes>
         
