@@ -16,7 +16,7 @@ if (!mongoUri) {
 
 app.use(express.json());
 app.use(cors({
-  origin: 'http://65.2.172.112:3001',
+  origin: 'http://65.2.172.112:5173',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
