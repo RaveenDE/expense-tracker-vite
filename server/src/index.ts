@@ -15,7 +15,11 @@ if (!mongoUri) {
 }
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: 'http://65.2.172.112:3001',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
 
 mongoose
   .connect(mongoUri)
