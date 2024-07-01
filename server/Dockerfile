@@ -5,7 +5,7 @@ FROM node:16
 WORKDIR /usr/src/app/server
 
 # Copy the package.json and yarn.lock files to the container
-COPY package.json yarn.lock ./
+COPY server/package.json yarn.lock ./
 
 # Install dependencies
 RUN npm install -g yarn
