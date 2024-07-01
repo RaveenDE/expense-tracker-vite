@@ -5,14 +5,13 @@ FROM node:16
 WORKDIR /usr/src/app/client
 
 # Copy the package.json and yarn.lock files to the container
-COPY client/package.json yarn.lock ./
+COPY client/package.json client/yarn.lock ./
 
 # Install dependencies
 RUN npm install -g yarn
 
 # Copy the rest of the application code to the container
-COPY . .
-
+COPY client/ ./
 # Expose the port the app runs on
 EXPOSE 5173
 
