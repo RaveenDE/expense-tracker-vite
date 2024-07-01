@@ -8,7 +8,7 @@ WORKDIR /usr/src/app/server
 COPY server/package.json server/yarn.lock ./
 
 # Install dependencies
-RUN npm install -g yarn
+RUN npm install 
 
 # Copy the rest of the application code to the container
 COPY server/ ./
