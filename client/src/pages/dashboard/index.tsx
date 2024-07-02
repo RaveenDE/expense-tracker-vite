@@ -19,7 +19,7 @@ export const Dashboard = () => {
 
   return (
     <div className="dashboard-container">
-      <h1>Welcome! Here Are Your Finances</h1>
+      
       <FinancialRecordForm />
       <div>Total Monthly: Rs{totalMonthly}</div>
       <FinancialRecordList />
